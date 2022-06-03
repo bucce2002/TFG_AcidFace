@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "373210009479",
+    "project_id": "acid-face-app",
+    "storage_bucket": "acid-face-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373210009479:android:876d1a2a0538046ae24d22",
+        "android_client_info": {
+          "package_name": "jesus.com.mylogin.acid_face_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373210009479-p6cedl3rbmmr13e09nsqp4apj57hde20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFfey26sbOgEzSV4c9rQ8LzzMyXVvfQEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373210009479-p6cedl3rbmmr13e09nsqp4apj57hde20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryTextColor"
+    android:backgroundTint="@color/primaryTextColor"
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-26dp">
+
+    <TextView
+        android:id="@+id/btnIrRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        android:fontFamily="@font/monse"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="No tienes cuenta? Regístrate"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:fontFamily="@font/averus"
+        android:text="ACID FACE"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/inputs_custom"
+        android:drawableStart="@android:drawable/sym_action_email"
+        android:ems="10"
+        android:textSize="16sp"
+        android:fontFamily="@font/monse"
+        android:hint=" Correo "
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtContra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtContra"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/inputs_custom"
+        android:drawableStart="@android:drawable/ic_lock_idle_lock"
+        android:ems="10"
+        android:fontFamily="@font/monse"
+        android:hint="Contraseña"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAcceder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/acid3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/btnAcceder"
+        android:layout_width="289dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/inputs_custom_btn"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Acceder"
+        android:fontFamily="@font/monse"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtOlvidar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtOlvidar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/monse"
+        android:text="¿Olvidaste la contraseña?"
+        android:textColor="@color/secondaryLightColor"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="4dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/btnGoogle"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/inputs_custom_btn3"
+        android:drawableStart="@drawable/google"
+        android:fontFamily="@font/monse"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingLeft="5dp"
+        android:text="Continúa con google"
+        android:textColor="@color/DarkGrey"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnFacebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btnFacebook"
+        android:layout_width="262dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/inputs_custom_btn2"
+        android:drawableStart="@drawable/face"
+        android:fontFamily="@font/monse"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingLeft="5dp"
+        android:text="Continúa con facebook"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnIrRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnGoogle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/separador" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
