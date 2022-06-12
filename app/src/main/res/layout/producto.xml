@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="35dp"
+    app:cardCornerRadius="9dp"
+    android:layout_margin="5dp"
+    android:id="@+id/ropa"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/backgroud_card"
+        >
+
+        <ImageView
+            android:id="@+id/imgProd"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/nomProd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE PROD"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X M S L XL"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/tallaProd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25sp"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/precioProd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100.00£"
+            android:textSize="25sp"
+            />
+        <Button
+            android:id="@+id/btCarrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_transp"
+            android:layout_gravity="left"
+            android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

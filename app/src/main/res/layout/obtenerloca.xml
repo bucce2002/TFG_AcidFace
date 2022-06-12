@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="500dp">
+
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="76dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Por favor introduzca la direecion donde quiere recibir el pedido"
+        app:layout_constraintBottom_toTopOf="@+id/direccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/inputs_custom"
+        android:drawableStart="@android:drawable/ic_lock_idle_lock"
+        android:ems="10"
+        android:fontFamily="@font/monse"
+        android:hint="Direccion "
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/telefon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/btnContinuar"
+        android:layout_width="289dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/botones"
+        android:fontFamily="@font/monse"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Continuar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/telefon"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/inputs_custom"
+        android:drawableStart="@android:drawable/ic_lock_idle_lock"
+        android:ems="10"
+        android:fontFamily="@font/monse"
+        android:hint="Telefono(Opcional)"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinuar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

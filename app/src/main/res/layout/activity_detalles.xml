@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallesActivity">
+
+    <ImageView
+        android:id="@+id/imagen_detallada"
+        android:layout_width="411dp"
+        android:layout_height="226dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_text" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryDarkColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Ver todos los productos" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/monse"
+        android:text="Precio:"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen_detallada" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/monse"
+        android:text="Nombre:"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/talla" />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/monse"
+        android:text="Rating:"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <TextView
+        android:id="@+id/talla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/monse"
+        android:text="Talla:"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price2" />
+
+    <ImageView
+        android:id="@+id/rating"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="108dp"
+        android:src="@drawable/star"
+        app:layout_constraintStart_toEndOf="@+id/rating_number"
+        app:layout_constraintTop_toBottomOf="@id/imagen_detallada" />
+
+    <TextView
+        android:id="@+id/rating_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="115dp"
+        android:fontFamily="@font/monse"
+        android:text="5.0"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/price2"
+        app:layout_constraintTop_toBottomOf="@id/imagen_detallada" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/primaryDarkColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/agregar"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/relative"
+        android:layout_marginLeft="6dp"/>
+
+    <TextView
+        android:id="@+id/cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/monse"
+        android:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/agregar"
+        app:layout_constraintTop_toTopOf="@id/relative"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:id="@+id/remover"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:src="@drawable/remove"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cantidad"
+        app:layout_constraintTop_toTopOf="@id/relative"
+        android:layout_marginLeft="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPagar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/categories_custom2"
+        android:text="Agregar al carrito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/relative" />
+
+    <RadioGroup
+        android:layout_width="196dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/talla"
+        app:layout_constraintTop_toBottomOf="@+id/rating">
+
+        <RadioButton
+            android:id="@+id/radioS"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="S"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioM"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="M"
+            android:checked="true"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioL"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:text="L"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioXL"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="XL"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

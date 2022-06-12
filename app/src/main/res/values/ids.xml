@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="view" type="id" />
+    <item name="imageView4" type="id" />
+    <item name="imagen_detallada" type="id" />
+    <item name="toolbar_text" type="id" />
+    <item name="price" type="id" />
+    <item name="nombre" type="id" />
+    <item name="talla" type="id" />
+    <item name="price2" type="id" />
+    <item name="rating" type="id" />
+    <item name="rating_number" type="id" />
+    <item name="relative" type="id" />
+    <item name="agregar" type="id" />
+    <item name="cantidad" type="id" />
+    <item name="remover" type="id" />
+    <item name="btnPagar" type="id" />
+</resources>
